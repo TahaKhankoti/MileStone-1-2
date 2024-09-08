@@ -1,0 +1,178 @@
+/* Reset margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  /* CV Design Styling */
+  .design-container {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 1200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  .design-row {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .design-left,
+  .design-right {
+    width: 45%;
+  }
+  
+  /* Profile Picture Styling */
+  .img-container img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 20px;
+  }
+  
+  /* Social Links */
+  .social-links {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .details-info{
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .details-info p{
+    display: flex;
+    font-size: 22px;
+    flex-direction: column;
+    
+  }
+  
+  
+  .social-links img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+  
+  /* Info Sections */
+  .info-section {
+    margin-top: 20px;
+  }
+  
+  .info-section h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  
+  .edu-ul {
+    /* list-style-type: none; */
+    margin-left: 30px;
+  }
+  
+  .skills-ul{
+    margin-left: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    gap: 10px;
+  }
+  
+  .skills-ul li{
+    background-color: rgb(205, 205, 248);
+    cursor: pointer;
+    transition: all 500ms;  
+    font-weight: bold;
+  }
+  
+  .skills-ul li:hover{
+    background-color: darkslategrey;
+    color:yellowgreen;
+    cursor: pointer;  
+  }
+  
+  ul li {
+    background-color: #f8f9fa;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+  }
+  
+  .design-left{
+    background: linear-gradient(black, rgb(169, 190, 294), darkslategrey);
+    padding: 10px;
+    box-shadow: 0 5px 110px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+  }
+  
+  h3{
+    background:rgb(219, 120, 55);
+    padding: 10px 5px;
+  }
+  
+  #toggleSkills{
+  padding: 10px;
+  margin: 20px 0;
+  cursor: pointer;
+  font-size: 17px;
+  border-radius: 20px;
+  font-weight: bold;
+  background-color: rgb(202, 202, 249);
+  border: none;
+  transition: all 200ms;
+  }
+  
+  #toggleSkills:hover{
+    background-color: blue;
+    color: white;
+  }
+  
+  .address{
+    text-align: justify;
+  }
+  .toggleSkills{
+    text-align: center;
+  }
+  
+  #name2Design{
+    text-align: center;
+  }
+  
+  /* Media Queries for Mobile Devices */
+  @media (max-width: 768px) {
+    .design-row {
+        flex-direction: column;
+        gap: 30px;
+    }
+  
+    .personal-info,
+    .professional-info {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+  
+    .design-left,
+    .design-right {
+        width: 100%;
+    }
+  }
+  
+  @media (max-width:500px) {
+    .details-info p{
+      font-size: 15px;
+    }
+  }
+  
